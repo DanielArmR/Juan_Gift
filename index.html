@@ -8,6 +8,16 @@
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
         <style>
+             body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+      
             .images-height{
                 height: 70%;
             }
@@ -16,59 +26,85 @@
                 text-align: justify;
                 font-size: 1.5em;
             }
+            
         </style>
     </head>
     <body>
-        <audio autoplay>
-            <source src="music/brillas.mp3" type="audio/mpeg">
-        </audio>
-        <nav class="red darken-2">
-            <div class="nav-wrapper">
-            <a href="#!" class="brand-logo center">K&J</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-            </ul>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="carousel">
-                <a href="" class="carousel-item"><img src="img/principal.jpg" class="images-height"></a>
-                <a href="" class="carousel-item"><img src="img/uno.jpg" class="images-height"></a>
-                <a href="" class="carousel-item"><img src="img/dos.jpg" class="images-height"></a>
-                <a href="" class="carousel-item"><img src="img/tres.jpg" class="images-height"></a>
-                <a href="" class="carousel-item"><img src="img/cuatro.jpg" class="images-height"></a>
-            </div>
-        </div>  
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <h5 class="center">Darla, Karlangas, bebé, corazón, apestosa, pecas, pibi:</h5>
+        <header>
+            <nav class="red darken-2">
+                <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                </ul>
                 </div>
-            <div class="row">
-                <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1 text-letter">
-                    <p>
-                        Un año, hace un año, ¿lo recuerdas? Por donde empezar, 28 de Enero del 2016, bienvenida de medicina, se siente gran expectativa y emoción; me pregunto: ¿estará cool?, ¿me divertiré?, ¿valdrá la pena?, mañana tengo anato ¿Y si no me logro despertar?, no importa, mis amigos me convencen, todos dicen vamos, y pues que malo podría pasar, me animo a ir.
-                    </p>
-                    <p>
-                        Llegamos, Kevin te manda wa para entrar todos juntos, primero saludo a Fer, "hola, ¿cómo estás?", te veo, pienso "wow, se ve muy hermosa", me pregunto: "¿si se lo digo que me dirá?". Total, se arma el ambiente, todos en su show y por mi mente nunca pasa que quisieras estar conmigo, todos bailan y en eso quedamos solo tu y yo, relativamente porque todo estaba a reventar, te veo, no te logras salir de mi mente, pff te ves brutal, ponen reggaeton, mi fav, jajaja comienzo a cantar y bailar y solo ruego por que me sigas y no te espantes de mis malos pasos, afortunadamente pasa, logramos crear una química muy especial, me la paso de lujo y no quiero estar con nadie mas que no seas tú, te hago la platica y comienzo a decir muchas tonterías y no me dejarás mentir que así fué, te dije que daba clases y ponía coreografías jajaja, que me había operado las pompis 😂 y tu lo tomas muy bien, seguimos platicando y bailando, no quiero que la noche acabe, incluso te intento besar y no te dejas, dices que no eres de esas chicas y wow me alegra demasiado escuchar eso; meses rectificaría que no eres de esas chicas, que eres especial, eres ese tipo de persona por la que vale la pena dejar todo, y no se siente como un sacrificio, más bien te nace ser así, mejor persona para tratar de estar a tu nivel. 
-                    </p>
-                    <p>
-                        Lamentablemente llega el momento en que te tienes que ir, 2:00 am aproximadamente, te despides y te digo: "nos vemos el lunes". En verdad moría de ganas por volver a estar contigo y fue en ese punto donde mi vida cambió, vaya giro que dió, a diario lo recuerdo y me alegro, un ángel había llegado a mi vida.
-                    </p>
-                    <p>
-                        Te adoro como no tienes idea, un año ha pasado de que comenzamos a construir lo que tenemos hasta ahora y no me arrepiento de ningún segundo que he pasado a tu lado, me complementas, me haces ser mejor persona, me siento feliz contigo y en verdad quiero que siga así por mucho tiempo, se que personas como tu no son fáciles de encontrar y para tu mala suerte no te librarás tan fácil eh. Por un año más juntos 💙💙💙
-                    </p>
+            </nav>
+        </header>
 
-                    <h4 style="text-align: center;">28/01/2017</h4>
-
-                    <h4 style="text-align: center;">J</h4>
+        <main>
+            <div class="row" style="padding-top: 200px;" id="div_boton">
+                <div class="col s8 m6 l4 offset-s3 offset-m4 offset-l5">
+                    <a href="#" id="play" class="waves-effect waves-light btn-large red darken-2">Ver sorpresa</a>
                 </div>
             </div>
             </div>
-        </div>
+            <div id="contenido_general">
+                <div class="container">
+                    <div class="carousel">
+                        <a href="" class="carousel-item"><img src="img/principal.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/uno.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/dos.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/tres.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/cuatro.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/cinco.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/seis.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/siete.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/ocho.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/nueve.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/diez.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/once.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/doce.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/trece.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/catorce.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/quince.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/dieciseis.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/diecisiete.jpg" class="images-height"></a>
+                        <a href="" class="carousel-item"><img src="img/diecinueve.jpg" class="images-height"></a>
+                    </div>
+                </div>  
+
+                <br>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            <h5 class="center">Darla, Karlangas, bebé, corazón, apestosa, pecas, pibi:</h5>
+                        </div>
+                    </row>
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1 text-letter">
+                            <p>
+                                Un año, hace un año, ¿lo recuerdas? Por donde empezar, 28 de Enero del 2016, bienvenida de medicina, se siente gran expectativa y emoción; me pregunto: ¿estará cool?, ¿me divertiré?, ¿valdrá la pena?, mañana tengo anato ¿Y si no me logro despertar?, no importa, mis amigos me convencen, todos dicen vamos, y pues que malo podría pasar, me animo a ir.
+                            </p>
+                            <p>
+                                Llegamos, Kevin te manda wa para entrar todos juntos, primero saludo a Fer, "hola, ¿cómo estás?", te veo, pienso "wow, se ve muy hermosa", me pregunto: "¿si se lo digo que me dirá?". Total, se arma el ambiente, todos en su show y por mi mente nunca pasa que quisieras estar conmigo, todos bailan y en eso quedamos solo tu y yo, relativamente porque todo estaba a reventar, te veo, no te logras salir de mi mente, pff te ves brutal, ponen reggaeton, mi fav, jajaja comienzo a cantar y bailar y solo ruego por que me sigas y no te espantes de mis malos pasos, afortunadamente pasa, logramos crear una química muy especial, me la paso de lujo y no quiero estar con nadie mas que no seas tú, te hago la platica y comienzo a decir muchas tonterías y no me dejarás mentir que así fué, te dije que daba clases y ponía coreografías jajaja, que me había operado las pompis 😂 y tu lo tomas muy bien, seguimos platicando y bailando, no quiero que la noche acabe, incluso te intento besar y no te dejas, dices que no eres de esas chicas y wow me alegra demasiado escuchar eso; meses después rectificaría que no eres de esas chicas, que eres especial, eres ese tipo de persona por la que vale la pena dejar todo, y no se siente como un sacrificio, más bien te nace ser así, mejor persona para tratar de estar a tu nivel. 
+                            </p>
+                            <p>
+                                Lamentablemente llega el momento en que te tienes que ir, 2:00 am aproximadamente, te despides y te digo: "nos vemos el lunes". En verdad moría de ganas por volver a estar contigo y fue en ese punto donde mi vida cambió, vaya giro que dió, a diario lo recuerdo y me alegro, un ángel había llegado a mi vida.
+                            </p>
+                            <p>
+                                Te adoro como no tienes idea, un año ha pasado de que comenzamos a construir lo que tenemos hasta ahora y no me arrepiento de ningún segundo que he pasado a tu lado, me complementas, me haces ser mejor persona, me siento feliz contigo y en verdad quiero que siga así por mucho tiempo, se que personas como tu no son fáciles de encontrar y para tu mala suerte no te librarás tan fácil de mi eh. Por un año más juntos 💙💙💙
+                            </p>
+
+                            <h4 style="text-align: center;">28/01/2017</h4>
+
+                            <h4 style="text-align: center;">J</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <footer class="page-footer footer-copyright red darken-2 center">
         </div>
@@ -83,6 +119,18 @@
             $(document).ready(function(){
                 $('.carousel').carousel();
                 $('.slider').slider({full_width: true});
+                $('#contenido_general').css({'display':'none'});
+
+                var song = document.createElement('audio');
+                song.setAttribute('src','music/brillas.mp3');
+                $.get();
+
+                $('#play').click(function(){
+                    $('#div_boton').css({'display':'none'});
+                    $('#contenido_general').css({'display':'block'});
+                    song.play();
+                    console.log("funciona");
+                });
             });
             
         </script>
