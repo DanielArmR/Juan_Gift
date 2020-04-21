@@ -26,7 +26,12 @@
                 text-align: justify;
                 font-size: 1.5em;
             }
-            
+            #edit{
+                margin-bottom: 5vh;
+            }
+            #edit button{
+                margin-top: 3vh;
+            }
         </style>
     </head>
     <body>
@@ -50,7 +55,7 @@
             </div>
             </div>
             <div id="contenido_general">
-                <div class="container">
+            <!--    <div class="container">
                     <div class="carousel">
                         <a href="" class="carousel-item"><img src="img/principal.jpg" class="images-height"></a>
                         <a href="" class="carousel-item"><img src="img/uno.jpg" class="images-height"></a>
@@ -72,19 +77,19 @@
                         <a href="" class="carousel-item"><img src="img/diecisiete.jpg" class="images-height"></a>
                         <a href="" class="carousel-item"><img src="img/diecinueve.jpg" class="images-height"></a>
                     </div>
-                </div>  
+                </div>  -->
 
                 <br>
 
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m12 l12">
-                            <h5 class="center">Darla, Karlangas, bebé, corazón, apestosa, pecas, pibi:</h5>
+                        <!--    <h5 class="center">Darla, Karlangas, bebé, corazón, apestosa, pecas, pibi:</h5>-->
                         </div>
                     </row>
                     <div class="row">
                         <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1 text-letter">
-                            <p>
+                            <!--<p>
                                 Un año, hace un año, ¿lo recuerdas? Por donde empezar, 28 de Enero del 2016, bienvenida de medicina, se siente gran expectativa y emoción; me pregunto: ¿estará cool?, ¿me divertiré?, ¿valdrá la pena?, mañana tengo anato ¿Y si no me logro despertar?, no importa, mis amigos me convencen, todos dicen vamos, y pues que malo podría pasar, me animo a ir.
                             </p>
                             <p>
@@ -95,11 +100,23 @@
                             </p>
                             <p>
                                 Te adoro como no tienes idea, un año ha pasado de que comenzamos a construir lo que tenemos hasta ahora y no me arrepiento de ningún segundo que he pasado a tu lado, me complementas, me haces ser mejor persona, me siento feliz contigo y en verdad quiero que siga así por mucho tiempo, se que personas como tu no son fáciles de encontrar y para tu mala suerte no te librarás tan fácil de mi eh. Por un año más juntos 💙💙💙
-                            </p>
+                            </p>-->
+                            <form>
+                                <div id="test"></div>
+                                <input type="file" accept="image/jpeg" id="cupon">
+                                <div id="content">
+                                    <p>Texto Actual</p>
+                                </div>
+                                <div id="edit">
+                                    <textarea id="text" cols="20" rows="20">Hola</textarea>
+                                    <button id="btn" class="waves-effect waves-light btn red darken-2" onclick='updt()'>Actualizar</button>
+                                </div>
+                                <input type="button" value="Editar" onclick="mostrar()" class="waves-effect waves-light btn red darken-2">
+                            </form>
 
-                            <h4 style="text-align: center;">28/01/2017</h4>
+                           <!-- <h4 style="text-align: center;">28/01/2017</h4>
 
-                            <h4 style="text-align: center;">J</h4>
+                            <h4 style="text-align: center;">J</h4>-->
                         </div>
                     </div>
                 </div>
@@ -108,6 +125,8 @@
 
         <footer class="page-footer footer-copyright red darken-2 center">
         </div>
+
+        <script src="js/index.js"></script>
         <!-- JQuery -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -121,14 +140,14 @@
                 $('.slider').slider({full_width: true});
                 $('#contenido_general').css({'display':'none'});
 
-                var song = document.createElement('audio');
-                song.setAttribute('src','music/brillas.mp3');
-                $.get();
+                //var song = document.createElement('audio');
+                //song.setAttribute('src','music/brillas.mp3');
+                //$.get();
 
                 $('#play').click(function(){
                     $('#div_boton').css({'display':'none'});
                     $('#contenido_general').css({'display':'block'});
-                    song.play();
+                   // song.play();
                     console.log("funciona");
                 });
             });
